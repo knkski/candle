@@ -96,11 +96,13 @@ jobs:
           RUSTFLAGS: "-C link-arg=-fuse-ld=lld"
         run: |
           cargo test --workspace --lib --bins --tests
+          cargo test -p candle-examples --example tabpfn
           cargo test --workspace --doc
       - name: Run tests (Windows & macOS)
         if: runner.os != 'Linux'
         run: |
           cargo test --workspace --lib --bins --tests
+          cargo test -p candle-examples --example tabpfn
           cargo test --workspace --doc
 
   fmt:

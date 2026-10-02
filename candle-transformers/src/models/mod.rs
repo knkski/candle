@@ -8,6 +8,7 @@
 //!  - Text to image models: [`stable_diffusion`] and [`wuerstchen`], ...
 //!  - Audio models: [`whisper`], [`encodec`], [`metavoice`], [`parler_tts`], ...
 //!  - Computer vision models: [`dinov2`], [`convmixer`], [`efficientnet`], ...
+//!  - Tabular classification: [`tabpfn`].
 //!  
 //! Some of the models also have quantized variants, e.g.  [`quantized_blip`], [`quantized_llama`] and  [`quantized_qwen2`].
 //!
@@ -128,6 +129,7 @@ pub mod stable_lm;
 pub mod starcoder2;
 pub mod stella_en_v5;
 pub mod t5;
+pub mod tabpfn;
 pub mod trocr;
 pub mod vgg;
 pub mod vit;

@@ -33,6 +33,7 @@ jobs:
       - name: Test (cuda)
         run: |
           cargo test --workspace --lib --bins --tests --features cuda
+          cargo test -p candle-examples --example tabpfn --features cuda
           cargo test --workspace --doc --features cuda
 
   test-cutile:
